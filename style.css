@@ -1,0 +1,1120 @@
+/* 
+  Trabalho de artes, recriação de sute para trabalho
+  Link do site original: https://preview.colorlib.com/theme/calvin/index.html
+  Trabalho apenas para fins recriativos
+  Daniel Filipe 2E1
+  COTEMIG
+*/
+
+/* Fonte do site */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Configurações globais */
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+::selection
+{
+    background-color: white;
+    color: #4b0f99;
+}
+
+body
+{ 
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+}
+
+/**********************************************************************************************************************************************************************/
+/* Barra superior */
+/**********************************************************************************************************************************************************************/
+/* parte solida da barra */
+nav
+{
+    position: fixed;
+    display:flex;
+    background-color: #4b0f99;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.15vw;
+    width: 100%;
+    box-shadow: 0, 0, 0, 5px black;
+    z-index: 3;
+}
+ 
+/* essa parte define a cor e o tamanho da fonte dos textos na barra separadamente */
+#title
+{
+    font-size: 2.5vw;
+    font-family: 'Rubik', sans-serif;
+    color: #fffbfa;
+    font-weight: 900;
+}
+
+#middle span
+{
+    color: #fffbfa;
+    font-weight: 500;
+}
+
+#end
+{
+    color: #fffbfa;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+/***********************************************************************************/
+
+/* Aqui sai as caracteriscas de cada parte da barra */
+    /* imagem com o titulo */
+    #title
+    {
+        margin-left: 4.7vw; 
+    }
+    /* barra central com as opcoes */
+    #middle span
+    {
+        margin-left:  1vw;
+        margin-right: 1vw;
+        padding-right: 0.3vw;
+        padding-left: 0.3vw;
+        padding-bottom: 1.33vw;
+    }
+    
+    /* animacao da barra */
+    #middle span:hover
+    {
+        border-bottom: solid #fffbfa 4px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    /*************************************/
+
+    /* botao no fim da pagina */
+    #end
+    {
+        margin-right: 4.7vw;
+
+        padding-bottom:  1vw;
+        padding-top:  1vw;
+        padding-left: 2.9vw;
+        padding-right: 2.9vw;
+
+        border: solid #fffbfa 1px;
+        border-radius: 5vw;
+    }
+    /* animacao do botao */
+    #end:hover
+    {
+        background-color: #fffbfa;
+        color: #39077a;
+        transition: 0.3s;
+    }
+/**********************************************************************************************************************************************************************/
+
+/**********************************************************************************************************************************************************************/
+/* Parte inicial do site */
+/* define a cor de fundo padrao para a primeira parte do site */
+.first
+{
+    background-image: linear-gradient(#450c8f, #400b85, #39077a);
+}
+
+/**********************************************************************************************************************************************************************/
+/* parte solida do fundo */
+#first_part
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 57vw;
+}
+
+/* IMAGEM E BORDA DA IMAGEM */
+#border
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: solid whitesmoke 4px;
+    padding: 0.7vw;
+    border-radius: 50%; 
+    width: 20vw;
+    height: 20vw;
+    
+}
+
+#first_part img
+{
+    position: relative;
+    top: 2.5vw;
+    right: 2vw;
+}
+/* ************************* */
+
+/* texto grande ao lado da imagem*/
+#text_big
+{
+    font-size: 4.5vw;
+    color: #fffbfa;
+    position: relative;
+    left: 2vw;
+    top: 0.5vw;
+    line-height: 1;
+}
+
+#text2
+{
+    position: relative;
+    left: 2vw;
+    top: 0.5vw;
+    margin-top: 2vw;
+    font-size: 2.3vw;
+    color: rgb(179, 179, 179);
+}
+/**********************************************************************************************************************************************************************/
+/* lista com os tres elementos em baixo */
+#bottom_list
+{
+    position: relative;
+    bottom: 8.5vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* textos pequenos em cima */
+    /* alinhamento */
+    /* primeiro */
+    .align1
+    {
+       text-align: left;
+    }
+
+    /* segundo */
+    .align2
+    {
+        text-align: center;
+        margin-left: 4vw;
+    }
+
+    /* terceiro */
+    .align3
+    {
+        text-align: right;
+    }
+    /* o terceiro texto precisa ser ajustado de forma diferente por conta da imagem */
+        .align3 span
+        {
+            margin-right: 10.5vw;
+        }
+    /* ************** */
+    
+    /* textos nos geral */
+    .text
+    {
+        text-align: center;
+        color: #fffbfa;
+        font-size: 1.3vw;
+        margin-left: 4vw;
+    }
+    
+/* *********************** */
+/* textos grandes em baixo */
+
+    .text_big
+    {
+        margin-top: 1.3vw;
+        color: #fffbfa;
+        font-size: 1.8vw;
+        margin-left: 4vw;
+    }
+
+    /* decoracao na linha do email */
+    .mail
+    {
+        text-decoration: underline;
+    }
+/* *********************** */
+/* configuracao da parte onde se tem o icone e o email */
+/* deixa o conteudo da div em linha */
+#mail_img
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* posicionamento da imagem */
+#mail_img img
+{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+/* **************************************************** */
+
+/**********************************************************************************************************************************************************************/
+/* Segunda parte do site */
+/**********************************************************************************************************************************************************************/
+/* define o tamanho da segunda parte do site */
+#second
+{
+    height: 57.5vw;
+    /* padding */
+        /* padding pros lados */
+        padding-left: 10vw;
+        padding-right: 10vw;
+        /* padding na vertical */
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+    /* ******* */
+    display: flex;
+    flex-direction: column;
+}
+
+/* posicionamento do texto da secao */
+#second_tittle
+{   
+    font-size: 3.3vw;
+    font-weight: 400;
+    color: #000000;
+    align-self: flex-start;
+}
+
+/* container com todas as divs */
+#container_2
+{
+    margin-top: 5vw;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* CONFIGURACAO GERAL COM AS 4 DIVS */
+    /* DIV 1 */
+    #cont2_div1
+    {
+        border-bottom: solid #f0ecec 0.5px;
+        border-right: solid #f0ecec 0.5px;
+        width: 35vw;
+        height: 18.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding */
+            /* padding pros lados */
+            padding-left: 2vw;
+            padding-right: 2vw;
+            /* padding na vertical */
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+    }
+    /* ******* */
+    /* DIV 2 */
+    #cont2_div2
+    {
+        border-bottom: solid #f0ecec 0.5px;
+        border-left: solid solid #f0ecec 0.5px;
+        width: 35vw;
+        height: 18.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding */
+            /* padding pros lados */
+            padding-left: 2vw;
+            padding-right: 2vw;
+            /* padding na vertical */
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        /* ******* */
+    }
+    /* DIV 3 */
+    #cont2_div3
+    {
+        width: 35vw;
+        height: 18.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding */
+            /* padding pros lados */
+            padding-left: 2vw;
+            padding-right: 2vw;
+            /* padding na vertical */
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        /* ******* */
+    }
+    /* DIV 4 */
+    #cont2_div4
+    {
+        border-left: solid #f0ecec 0.5px;
+        width: 35vw;
+        height: 18.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding */
+            /* padding pros lados */
+            padding-left: 2vw;
+            padding-right: 2vw;
+            /* padding na vertical */
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        /* ******* */
+    }
+
+    /* ANIMACAO DAS 4 DIVS */
+    #cont2_div1:hover, #cont2_div2:hover, #cont2_div3:hover, #cont2_div4:hover
+    {
+        box-shadow: 3px 3px 25px #dec5ff;
+        transition: 0.5s;
+    }
+/************************************/
+
+/* CONFIGURACAO GERAL DOS ITENS DENTRO DAS DIVS */
+    /* titulo do conteudo */
+    .div_tittle
+    {
+        margin-top: 2vw;
+        margin-bottom: 1.4vw;
+    }
+
+    /* texto */
+    .div_paragraph
+    {
+        font-size: 1.2vw;
+        letter-spacing: 1px;
+        font-weight: 580;
+    }
+
+/* ************************ */
+/* link em baixo */
+    /* texto */
+    .div_link
+    {
+        margin-top: 2.3vw;
+        font-size: 1.2vw;
+        color: #4b0f99;
+        font-weight: 570;
+    }
+        /* underline */
+            .line
+            {
+                /* border: solid blue; */
+                display: flex;
+                flex-direction: column;
+            }
+            /* underline improvisada */
+            .underline
+            {
+                margin-top: 0.5vw;
+                font-size: 0;
+                border-bottom: solid #4b0f99;
+            }
+        /* ********* */
+    /* Animacao do link */
+    .line:hover
+    {
+        letter-spacing: 1px;
+        transition: 0.5s;
+    }
+/* ************************ */
+
+
+/**********************************************************************************************************************************************************************/
+/* terceira parte do site */
+/**********************************************************************************************************************************************************************/
+/* define o tamanho da terceira parte do site */
+#third
+{
+    margin-top: 4vw;
+    height: 68vw;
+    /* padding */
+        /* padding pros lados */
+        padding-left: 10vw;
+        padding-right: 9.5vw;
+        /* padding na vertical */
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    /* ******* */
+    display: flex;
+    flex-direction: column;
+}
+/* container onde as fotos sera posicionadas */
+#container_3
+{
+    margin-top: 4vw;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* posicionamento do titulo da secao */
+#third_tittle
+{   
+    font-size: 3.3vw;
+    font-weight: 400;
+    color: #000000;
+    align-self: flex-start;
+}
+
+/* tamanho das imagens */
+.container3_img
+{
+    width: 38vw;
+    height: 25vw;
+    border-radius: 2%;
+}
+
+/* CONFIGURACAO DAS DIVS QUE CONTEM AS IMAGENS DENTRO */
+    /* configuracao geral das divs */
+    #div3_1, #div3_2, #div3_3, #div3_4
+    {
+        width: 38vw;
+        height: 25vw;
+        font-size: 0;
+        border-radius: 2%;
+        z-index: +1;
+    }
+
+    /* padding das divs */
+    /* 1 */
+    #div3_1
+    {
+        margin-right: 1.75vw;
+        margin-bottom: 1.75vw;
+
+    }
+    /* 2 */
+    #div3_2
+    {
+        margin-bottom: 1.75vw;
+    }
+    /* 3 */
+    #div3_3
+    {
+        margin-right: 1.75vw;
+    }
+
+/* ****************************** */
+/*ANIMACAO AO PASSAR PELA FOTO */
+/* ****************************** */
+/* posicao do texto que aparece no hover */
+#div3_1 span, #div3_2 span, #div3_3 span, #div3_4 span
+{
+    color: #fafafa;
+    position: relative;
+    bottom: 5vw;
+    left: 10%;
+    user-select: none;  
+}
+
+/* muda a cor do fundo e faz o texto aparecer */
+#div3_1:hover, #div3_2:hover, #div3_3:hover, #div3_4:hover
+{
+    
+    font-size: 1.7vw;
+    font-weight: 600;
+    background-color: #4b0f99;
+    transition: 0.3s;
+}
+/* transforma a foto em parcialmente transparente */
+.container3_img:hover
+{
+    filter: opacity(70%);
+}
+/* ****************************** */
+
+/* botao em baixo */
+#div3_button
+{
+    margin-top: 6vw;
+    margin-right: 1.3vw;
+
+    align-self: center;
+    width: 5.2vw;
+
+    padding-bottom:  1vw;
+    padding-top:  1vw;
+    padding-left: 2.9vw;
+    padding-right: 2.9vw;
+
+    letter-spacing: 1px;
+    text-align: center;
+    border: solid #39077a 1px;
+    border-radius: 5vw;
+    font-weight: 600;
+    }
+/* animacao do botao */
+#div3_button:hover
+{
+    background-color: #39077a;
+    color: #fffbfa;
+    transition: 0.4s;
+}
+/**********************************************************************************************************************************************************************/
+/* Quarta parte do site */
+/**********************************************************************************************************************************************************************/
+/* tamanho geral a quarta parte */
+#fourth
+{
+    height: 53vw;
+    margin-top: 3vw;
+
+    /* padding */
+        /* padding na horizontal */
+        /* padding-left: 10vw; */
+        /* padding-right: 10vw; */
+        /* padding na vertical */
+    /* ******* */
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* div de cinza de fundo */
+#fourth_container
+{
+    width: 53vw;
+    height: 36vw;
+    background-color: #f5f5f5;
+    border-top-right-radius: 11%;
+    border-bottom-right-radius: 11%;
+
+        /* padding */
+        /* padding pros lados */
+        padding-left: 10vw;
+        padding-right: 10vw;
+        /* padding na vertical */
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+    /* ******* */
+
+    /* display */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titulo da div */
+#fourth_container h1
+{
+    margin-top: 1vw;
+    font-size: 3.4vw;
+    font-weight: 500;
+}
+
+/* primeira parte de texto */
+#fourth_txt1
+{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2.5vw;
+    width: 35vw;
+    font-size: 1vw;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 600;
+}
+/* segunda parte de texto */
+#fourth_txt2
+{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2.5vw;
+    font-size: 1.7vw;
+    width: 35vw;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #450c8f;
+}
+/* LISTA COM OS ELEMENTOS DO LADO */
+/* lista no geral */
+#fourth_list
+{
+    position: relative;
+    width: 40vw;
+    bottom: 14vw;
+    left: 40vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* LISTA */
+/* espacamento dos elementos da lista */
+.space_list
+{
+    margin-bottom: 1.5vw;
+}
+/* texto da lista */
+.list4_txt1
+{
+    letter-spacing: 1px;
+    font-size: 1.1vw;
+}
+.list4_txt2
+{
+    letter-spacing: 1px;
+    font-size: 1.1vw;
+    font-family: 'Open Sans', sans-serif;
+    color: #450c8f;
+    font-weight: 600;
+}
+/* organizacao das partes da lista */
+        /* 
+            essa classe serve para organizar os items da lista  
+            de forma a mudar o espacamento entre o texto e a parte grafica
+            e ela serve para todas as 3 partes da lista no texto
+        */
+        .list4_order
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.7vw;
+        }
+        /* essa parte será onde ficara o grafico da porcentagem */
+        .list4_order2
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        /* parte da cor porcentagem em baixo */
+        /* primeira parte */
+        #list4_1_down1
+        {
+            border-bottom: 5px solid #450c8f;
+            width: 24vw;
+        }
+        #list4_1_down2
+        {
+            border-bottom: 5px solid #450c8f98;
+            width: 17.8vw;
+
+            position: relative;
+            right: 0.2vw;
+        }
+        /* *************** */
+        /* segunda parte */
+        #list4_2_down1
+        {
+            border-bottom: 5px solid #450c8f;
+            width: 39.4vw;
+        }
+        #list4_2_down2
+        {
+            border-bottom: 5px solid #450c8f98;
+            width: 4.9vw;
+
+            position: relative;
+            right: 0.2vw;
+        }
+        /* *************** */
+        /* terceira parte */
+        #list4_3_down1
+        {
+            border-bottom: 5px solid #450c8f;
+            width: 36.9vw;
+        }
+        #list4_3_down2
+        {
+            border-bottom: 5px solid #450c8f98;
+            width: 3.3vw;
+
+            position: relative;
+            right: 0.2vw;
+        }
+        /* *************** */
+/* ****************************** */
+/* IMAGENS EM BAIXO */
+#fourth_img_list
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 6vw;
+}
+/**********************************************************************************************************************************************************************/
+/* Quinta parte do site */
+/**********************************************************************************************************************************************************************/
+/* tamanho geral a quinta parte */
+#fifth
+{
+    height: 38vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* texto da quinta parte */
+#fifth_tittle
+{
+    font-size: 3.3vw;
+    font-weight: 500;
+    margin-top: 4vw;
+    margin-bottom: 4vw
+}
+
+/* caixa com o conteudo */
+#fifth_box
+{
+    border-radius: 0.5vw;
+    width: 52%;
+    height: 12.5vw;
+
+    background-color: #f8f4ff;
+
+    /* padding */
+        padding-top: 4.5vw;
+        padding-bottom: 4.5vw;
+        padding-right: 8vw;
+        padding-left: 8vw;
+    /* ****** */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CONTEUDO DA CAIXA */
+    /* primeira parte de texto */
+    #fifth_text
+    {
+        letter-spacing: 1px;
+        font-size: 1vw;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif; 
+        text-align: center;
+    }
+    #content5_2
+    {
+        border: solid;
+    }
+    /* lista com o resto do conteudo da caixa */
+        #box5_list
+        {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3vw;
+        }
+        /* texto da lista */
+            #list5_txt1
+            {
+                margin-left: 1vw;
+                margin-bottom: 0.6vw;
+                letter-spacing: 1px;
+                font-size: 1.35vw;
+                font-weight: 700;
+                color: #5010a3;
+            }
+
+            #list5_txt2
+            {
+                font-family: 'Open Sans', sans-serif; 
+                margin-left: 1vw;
+                letter-spacing: 1px;
+                font-size: 0.9vw;
+                font-weight: 500;
+            }
+    /* ************************************** */
+/* ***************** */
+/**********************************************************************************************************************************************************************/
+/* Sexta parte do site */
+/**********************************************************************************************************************************************************************/
+#sixth
+{
+    height: 32vw;
+        
+    /* padding */
+        /* padding na horizontal */
+        padding-left: 10vw;
+        padding-right: 10vw;
+        /* padding na vertical */
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+    /* ******* */
+    display: flex;
+    flex-direction: column;
+}
+
+/* titulo da section */
+#sixth_tittle
+{
+    font-size: 3.3vw;
+    font-weight: 500;
+    margin-bottom: 4vw
+}
+
+/* espacamento entre as imagens */
+#list6_img1
+{
+    margin-right: 2.5vw;
+}
+
+/* lista com as imagens da sexta parte */
+    #sixth_list
+    {
+        display: flex;
+        flex-direction: row;
+        height: 26vw;
+    }
+    /* imagens da lista */
+    /* efeitos imagem 1 */
+        #img6_dec
+        {
+            border-radius: 0.5vw;
+            position: relative;
+            bottom: 26.2vw;
+            height: 20.5vw;
+            width: 32.3vw;
+
+            /* padding */
+            /* padding pros lados */
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
+            /* padding na vertical */
+            padding-top: 3vw;
+            padding-bottom: 2.5vw;
+            /* ******* */
+
+            background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), rgba(1, 15, 80, 0.877) );
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+    /* conteudo dentro das imagens */
+    /* essa parte serve para alinha o botao e o texto ao lado */
+    .sixth_2items
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* botao dentro das imagens */
+    .sixth_button
+    {
+        padding: 0.3vw 1.1vw 0.3vw 1.1vw;
+        background-color: #5010a3;
+        border-radius: 1.5vw;
+        color: white;
+        font-size: 1.2vw;
+    }
+        /* texto dentro das imagens */
+        /* texto 1 */
+        .sixth_txt1
+        {
+            margin-left: 0.7vw;
+            font-size: 1.3vw;
+            font-weight: 600;
+            color: white;
+            font-family: 'Open Sans', sans-serif; 
+        }
+        /* texto 2 */
+        .sixth_txt2
+        {
+            margin-top: 1vw;
+            font-size: 1.6vw;
+            font-weight: 600;
+            color: white;
+            font-family: 'Open Sans', sans-serif; 
+        }
+        /* ************************ */
+    /* ************************ */
+    /* ANIMACOES DAS IMAGENS */
+    .sixth_button:hover
+    {
+        background-color: white;
+        color: #5010a3;
+        transition: 0.5s;
+    }
+    .sixth_txt2:hover
+    {
+        text-decoration: underline;
+    }
+/* *********************************** */
+/**********************************************************************************************************************************************************************/
+/* Ultima parte do site */
+/**********************************************************************************************************************************************************************/
+/* tamanho do footer */
+footer
+{
+    margin-top: 3.5vw;
+    background-color: black;
+    height: 21vw;
+    border: black solid;
+    /* padding */
+        /* padding na horizontal */
+        padding-left: 10vw;
+        padding-right: 10vw;
+        /* padding na vertical */
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+    /* ******* */
+    display: flex;
+    flex-direction: column; 
+}
+
+/* titulo do footer */
+footer h1
+{
+    font-size: 2.5vw;
+    font-family: 'Rubik', sans-serif;
+    color: #9059d8;
+    font-weight: 900;
+}
+/* primeira parte de conteudo do footer */
+#footer_part1
+{
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* texto */
+#footer_div1
+{
+    font-family: 'Open Sans', sans-serif; 
+    width: 40%;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+/* botao 1*/
+#footer_end
+{
+    color: #fffbfa;
+    font-size: 1.1vw;
+    font-weight: 500;
+
+    margin-right: 2vw;
+    padding-bottom: 1.1vw;
+    padding-top:  1.1vw;
+    padding-left: 3.2vw;
+    padding-right: 3.2vw;
+
+    border-radius: 5vw;
+    border: solid #fffbfa 1px;
+}
+/* animacao do botao */
+#footer_end:hover
+{
+    color: #7133c2;
+    transition: 0.3s;
+}
+
+/* botao 2*/
+#footer_end2
+{
+    color: #fffbfa;
+    font-size: 1.1vw;
+    font-weight: 500;
+
+    padding-bottom: 1.1vw;
+    padding-top:  1.1vw;
+    padding-left: 3.2vw;
+    padding-right: 3.2vw;
+
+    background-color: #39077a;
+    border-radius: 5vw;
+}
+/* animacao do botao */
+#footer_end2:hover
+{
+    background-color: #fffbfa;
+    color: #39077a;
+    transition: 0.5s;
+}
+/* ****************** */
+
+/* lista com as redes sociais */
+/* corpo da lista */
+#footer_part2
+{
+    margin-top: 1.5vw;
+    display: flex;
+}
+/* caixinhas com as redes sociais */
+.social_list
+{
+    display: flex;
+    border-radius: 0.5vw;
+    background-color: #6d17dd2d;
+    padding: 0.4vw 0.5vw 0.4vw 0.5vw;
+    margin-right: 1vw;
+}
+/* imagens das redes */
+.social_list_img
+{
+    display: inline-block;
+    width:  1.4vw;
+    height: 1.4vw;
+    filter: saturate(200%);
+}
+/* animacao da imagem */
+.social_list_img:hover
+{
+    animation: rotate-btn .5s linear 3;
+    transform: scaleX(-1);
+    transition: 0.3s;
+}
+/* ************************** */
+
+/* ultima parte do rodape */
+#footer_part3
+{
+    margin-top: 7vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* primeira metade da ultima parte */
+#copyright
+{
+    color: #fffbfa;
+}
+#copyright a
+{
+    color: #6020b3;
+}
+
+/* segunda metade da ultima parte */
+#part3_footer a
+{
+    color: #fffbfa;
+    text-decoration: none;
+    margin-left:  1vw;
+    margin-right: 1vw;
+    padding-right: 0.3vw;
+    padding-left: 0.3vw;
+    padding-bottom: 1.33vw;     
+}
+
+/* animacao da barra */
+#part3_footer a:hover
+{
+    border-bottom: solid #fffbfa 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
